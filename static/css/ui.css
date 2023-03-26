@@ -11,6 +11,69 @@ html {
 INCLUDE STYLES AND COMPONENTS
 ===================== */
 /* ================== HELPERS  =================== */
+
+
+
+
+/* ****************************************************************** */
+.paginationnew{
+  display: flex;
+	padding-left: 0;
+
+	background-color: #fff;
+	border-radius: 40px;
+	box-shadow: 0 5px 25px 1 rgba(0,0,0,.5);
+	}
+	.paginationnew li{
+		display: inline-block;
+		list-style: none;
+}
+	.paginationnew li a{
+		display: block;
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			background-color: #fff;
+			text-align: center;
+			text-decoration: none;
+			color: #252525;
+			border-radius: 4px;
+			margin: 5px;
+			box-shadow: inset 0 5px 10px rgba(0,0,0,.1), 0 2px 5px rgba(0,0,0,.5);
+			transition: all .3s ease;
+				
+			
+	}
+	.paginationnew li a:hover{
+		         color: #fff;
+				 background-color: #ff4242;
+		
+	}
+	#act{
+		color: #fff;
+				 background-color: #ff4242;
+		
+	}
+	.paginationnew li:first-child a{
+		border-radius: 40px 0 0 40px;
+}
+	.paginationnew li:last-child a{
+		border-radius: 0 40px 40px 0;
+	}
+  #dis{
+    pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: black;
+  }
+	/* ************************************************************** */
+
+
+
+
+
+
+
 a:hover {
   text-decoration: none;
 }
@@ -74,8 +137,8 @@ a:hover {
 }
 
 .img-xs, .img-sm, .img-md, .img-lg {
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   flex-shrink: 0;
   flex-grow: 0;
 }
@@ -86,7 +149,7 @@ a:hover {
 }
 
 .img-sm {
-  width: 80px;
+  width: 100px;
   height: 80px;
 }
 
@@ -851,8 +914,8 @@ a[class*=card]:hover .title {
   max-width: 100%;
   width: auto;
   display: inline-block;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* GRID STYLE PRODUCT ITEM */
@@ -1258,7 +1321,7 @@ a[class*=card]:hover .title {
 }
 
 .input-spinner {
-  width: 125px;
+  width: 130px;
   flex-wrap: nowrap;
   display: inline-flex;
   vertical-align: middle;
