@@ -1,6 +1,13 @@
 {% extends 'base.html' %}
-
 {% load static %}
+
+{% block title %}
+{% if 'search' in request.path %}
+     ArtiZan - Search result
+    {% else %}
+	Artizan Store
+    {% endif %}
+{% endblock %}
 
 {% block content %}
 

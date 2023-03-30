@@ -1,3 +1,4 @@
+from django.http import HttpResponse
 from django.shortcuts import render
 from shop.models import Product
 from django.db.models import Q
@@ -17,9 +18,16 @@ def search(request):
         if keyword:
             products = Product.objects.order_by('created_date').filter(Q(description__icontains=keyword) | Q(product_name__icontains=keyword) | Q(price__icontains=keyword))
             products_count=products.count()
+        if keyword == '':
+            products=0
+            products_count=products
+    
     context = {
         'products' : products,
         'products_count':products_count,
 
     }
     return render(request,'store/store.html',context)
+
+def checkout(request):
+    return HttpResponse('<h1> will be coming soon </h1>')

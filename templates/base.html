@@ -7,7 +7,7 @@
 <meta http-equiv="cache-control" content="max-age=604800" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<title>GreatKart | One of the Biggest Online Shopping Platform</title>
+<title>{% block title %} {% endblock %}</title>
 
 <link href="{% static 'images/favicon.icon' %}" rel="shortcut icon" type="image/x-icon">
 
@@ -41,6 +41,7 @@ $(document).ready(function() {
 
 </head>
 <body>
+
      <!-- Navbar -->
     {% include 'basic/navbar.html' %}
    

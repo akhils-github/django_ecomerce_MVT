@@ -2,7 +2,16 @@
 
 {% load static %}
 
+{% block title %}
+    {% if single_product %}
+        {{single_product.product_name}} - ArtiZan
+    {% else %}
+        see our New Collection - ArtiZan
+    {% endif %}
+{% endblock %}
+
 {% block content %}
+
 
 <section class="section-content padding-y bg">
     <div class="container">
@@ -11,9 +20,9 @@
     <div class="card">
         <div class="row no-gutters">
             <aside class="col-md-6">
-    <article class="gallery-wrap"> 
-        <div class="img-big-wrap">
-           <a href="#"><img src="{{single_product.image.url}}"></a>
+    <article class=""> 
+        <div class="img-fluid">
+           <a href="#" ><img src="{{single_product.image.url}}" class="img-fluid"></a>
         </div> <!-- img-big-wrap.// -->
         
     </article> <!-- gallery-wrap .end// -->

@@ -1,7 +1,12 @@
-
 {% extends 'base.html' %}
-
 {% load static %}
+{% block title %}
+{% if not cart_items %}
+Your Shopping Cart is Empty
+    {% else %}
+    Your Shopping Cart Item
+    {% endif %}
+{% endblock %}
 
 {% block content %}
 
