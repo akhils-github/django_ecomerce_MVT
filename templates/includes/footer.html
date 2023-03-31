@@ -21,4 +21,17 @@
 </footer>
 <!-- ========================= FOOTER END // ========================= -->
 
+<!-- ========================= Functionality of product thumb images ========================= -->
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+<script>
+	$(document).ready(function(){
+		$('.thumb a').click(function(e){
+			e.preventDefault();
+			$('.mainImage img').attr('src', $(this).attr("href"));
+		})
+	})
+</script>
+
+</body>
+</html>

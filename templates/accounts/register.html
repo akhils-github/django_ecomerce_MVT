@@ -17,7 +17,7 @@ Register- ArtZan
     <!-- ============================ COMPONENT REGISTER   ================================= -->
         <div class="card mx-auto" style="max-width:520px; margin-top:40px;">
           <article class="card-body">
-            {% include 'basic/alert.html' %}
+            {% include 'includes/alert.html' %}
             <header class="mb-4"><h4 class="card-title">Sign up</h4></header>
             <form action="{% url 'register' %}" method="post">
               {% csrf_token %}
