@@ -55,15 +55,14 @@ Zanshop is an eCommerce application built with Python Django Framework. Some of 
 
 
 # Setup Instructions
-
-1. Clone the repository `git clone https://github.com/dev-rathankumar/greatkart-pre-deploy.git`
-2. Navigrate to the working directory `cd greatkart-pre-deploy`
-3. Open the project from the code editor `code .` or `atom .`
-4. Create virtual environment `python -m venv env`
-5. Activate the virtual environment `source env/Scripts/activate`
-6. Install required packages to run the project `pip install -r requirements.txt`
-7. Rename _.env-sample_ to _.env_
-8. Fill up the environment variables:
+git clone 
+1. Navigrate to the working directory `cd project folder`
+2. Open the project from the code editor `code .` or `atom .`
+3. Create virtual environment `python -m venv env`
+4. Activate the virtual environment `source env/Scripts/activate`
+5. Install required packages to run the project `pip install -r requirements.txt`
+6. Rename _.env-sample_ to _.env_
+7. Fill up the environment variables:
     _Generate your own Secret key using this tool [https://djecrety.ir/](https://djecrety.ir/), copy and paste the secret key in the SECRET_KEY field._
 
     _Your configuration should look something like this:_
